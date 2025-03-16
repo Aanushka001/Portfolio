@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aanushka Singh | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Aanushka Singh</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#certifications" class="nav-item">Certifications</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section-animate">
+        <div class="home-content">
+            <img src="profile.jpeg" alt="Profile Picture" class="profile-img">
+            <div class="text">
+                <h2>👋 Hi, I'm Aanushka Singh</h2>
+                <p>B.Tech CSE | Passionate about Backend & Data Analytics</p>
+                <div class="button-group">
+                    <a href="resume.pdf" download class="btn primary-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn secondary-btn">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-animate">
+        <h2><i class="fas fa-rocket"></i> Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <div class="project-content">
+                    <h3>Crime Watch</h3>
+                    <p>A real-time crime reporting platform with interactive heatmaps for data visualization.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://crimewatch-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                            <i class="fas fa-eye"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Aanushka001/Crime-Watch" target="_blank" rel="noopener noreferrer" class="project-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <h3>Advance Kinetic Space-Saving Navigator</h3>
+                    <p>An intelligent parking management system using AI-based computer vision for space detection.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>OpenCV</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn disabled">
+                            <i class="fas fa-code"></i> Coming Soon
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-animate">
+        <h2><i class="fas fa-certificate"></i> Certifications</h2>
+        <div class="certificates-container">
+            <div class="certificate" onclick="openCertificate('cert1')">
+                <img src="certificate1-thumbnail.png" alt="Certificate 1">
+                <p>ByteXL Summer Internship</p>
+            </div>
+            <div class="certificate" onclick="openCertificate('cert2')">
+                <img src="certificate2-thumbnail.png" alt="Certificate 2">
+                <p>Odoo Hackathon Participation</p>
+            </div>
+            <div class="certificate" onclick="openCertificate('cert3')">
+                <img src="certificate3-thumbnail.png" alt="Certificate 3">
+                <p>PU Code Hackathon</p>
+            </div>
+            <div class="certificate" onclick="openCertificate('cert4')">
+                <img src="certificate4-thumbnail.png" alt="Certificate 4">
+                <p>MERN Full-Stack Developer</p>
+            </div>
+            <div class="certificate" onclick="openCertificate('cert5')">
+                <img src="certificate5-thumbnail.png" alt="Certificate 5">
+                <p>Accenture Developer Job Simulation</p>
+            </div>
+            <div class="certificate" onclick="openCertificate('cert6')">
+                <img src="certificate6-thumbnail.png" alt="Certificate 6">
+                <p>Deloitte Technology Job Simulation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-animate">
+        <h2><i class="fas fa-lightbulb"></i> Skills</h2>
+        <div class="skills-container">
+            <div class="skill"><i class="fab fa-html5"></i> HTML5, CSS3, JavaScript</div>
+            <div class="skill"><i class="fab fa-node"></i> Node.js, Express.js</div>
+            <div class="skill"><i class="fas fa-database"></i> MongoDB, Firebase</div>
+            <div class="skill"><i class="fab fa-react"></i> React.js, Redux</div>
+            <div class="skill"><i class="fab fa-python"></i> Python, Data Analysis</div>
+            <div class="skill"><i class="fas fa-tools"></i> Git, REST APIs</div>
+            <div class="skill"><i class="fas fa-code"></i> Problem Solving</div>
+            <div class="skill"><i class="fas fa-laptop-code"></i> UI/UX Design</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-animate">
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: <a href="mailto:aanushkasingh328@gmail.com">aanushkasingh328@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/aanushka-singh-5bab49223/" target="_blank" rel="noopener noreferrer">Aanushka Singh</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub: <a href="https://github.com/Aanushka001" target="_blank" rel="noopener noreferrer">My Repositories</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone: <a href="tel:+918837309438">8837309438</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aanushka Singh. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/Aanushka001" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+                <i class="fab fa-github"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/aanushka-singh-5bab49223/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCertificate()">&times;</span>
+            <iframe id="certificateFrame" src="" frameborder="0" title="Certificate Viewer"></iframe>
+        </div>
+    </div>
+</body>
+</html>
