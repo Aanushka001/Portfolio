@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +34,18 @@
         </nav>
     </header>
 
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-sun"></i>
+    </div>
+
     <!-- Home Section -->
     <section id="home" class="section-animate">
         <div class="home-content">
             <img src="profile.jpeg" alt="Profile Picture" class="profile-img">
             <div class="text">
                 <h2>👋 Hi, I'm Aanushka Singh</h2>
-                <p>B.Tech CSE | Passionate about Backend & Data Analytics</p>
+                <p>B.Tech CSE | Software Engineer | Data Analytics Enthusiast</p>
                 <div class="button-group">
                     <a href="resume.pdf" download class="btn primary-btn">
                         <i class="fas fa-download"></i> Download Resume
@@ -86,7 +91,7 @@
                         <span>OpenCV</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-btn disabled">
+                        <a href="#" class="project-btn">
                             <i class="fas fa-code"></i> Coming Soon
                         </a>
                     </div>
@@ -99,29 +104,83 @@
     <section id="certifications" class="section-animate">
         <h2><i class="fas fa-certificate"></i> Certifications</h2>
         <div class="certificates-container">
-            <div class="certificate" onclick="openCertificate('cert1')">
-                <img src="certificate1-thumbnail.png" alt="Certificate 1">
-                <p>ByteXL Summer Internship</p>
+            <div class="certificate" data-cert="cert1">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <img src="certificate1-thumbnail.png" alt="Certificate 1">
+                        <p>ByteXL Summer Internship</p>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>ByteXL Summer Internship</h4>
+                        <p class="description">Completed intensive training in full-stack development with industry projects.</p>
+                        <button class="view-cert-btn">View Certificate</button>
+                    </div>
+                </div>
             </div>
-            <div class="certificate" onclick="openCertificate('cert2')">
-                <img src="certificate2-thumbnail.png" alt="Certificate 2">
-                <p>Odoo Hackathon Participation</p>
+            <div class="certificate" data-cert="cert2">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <img src="certificate2-thumbnail.png" alt="Certificate 2">
+                        <p>Odoo Hackathon Participation</p>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>Odoo Hackathon</h4>
+                        <p class="description">Participated in building enterprise solutions using Odoo framework.</p>
+                        <button class="view-cert-btn">View Certificate</button>
+                    </div>
+                </div>
             </div>
-            <div class="certificate" onclick="openCertificate('cert3')">
-                <img src="certificate3-thumbnail.png" alt="Certificate 3">
-                <p>PU Code Hackathon</p>
+            <div class="certificate" data-cert="cert3">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <img src="certificate3-thumbnail.png" alt="Certificate 3">
+                        <p>PU Code Hackathon</p>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>PU Code Hackathon</h4>
+                        <p class="description">Developed innovative solutions for real-world problems in 24-hour coding challenge.</p>
+                        <button class="view-cert-btn">View Certificate</button>
+                    </div>
+                </div>
             </div>
-            <div class="certificate" onclick="openCertificate('cert4')">
-                <img src="certificate4-thumbnail.png" alt="Certificate 4">
-                <p>MERN Full-Stack Developer</p>
+            <div class="certificate" data-cert="cert4">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <img src="certificate4-thumbnail.png" alt="Certificate 4">
+                        <p>MERN Full-Stack Developer</p>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>MERN Stack Developer</h4>
+                        <p class="description">Mastered MongoDB, Express.js, React.js, and Node.js development stack.</p>
+                        <button class="view-cert-btn">View Certificate</button>
+                    </div>
+                </div>
             </div>
-            <div class="certificate" onclick="openCertificate('cert5')">
-                <img src="certificate5-thumbnail.png" alt="Certificate 5">
-                <p>Accenture Developer Job Simulation</p>
+            <div class="certificate" data-cert="cert5">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <img src="certificate5-thumbnail.png" alt="Certificate 5">
+                        <p>Accenture Developer Job Simulation</p>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>Accenture Developer Program</h4>
+                        <p class="description">Completed virtual internship program focused on real-world development scenarios.</p>
+                        <button class="view-cert-btn">View Certificate</button>
+                    </div>
+                </div>
             </div>
-            <div class="certificate" onclick="openCertificate('cert6')">
-                <img src="certificate6-thumbnail.png" alt="Certificate 6">
-                <p>Deloitte Technology Job Simulation</p>
+            <div class="certificate" data-cert="cert6">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <img src="certificate6-thumbnail.png" alt="Certificate 6">
+                        <p>Deloitte Technology Job Simulation</p>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>Deloitte Technology Program</h4>
+                        <p class="description">Participated in technology consulting simulation with practical business cases.</p>
+                        <button class="view-cert-btn">View Certificate</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -172,18 +231,17 @@
             <a href="https://github.com/Aanushka001" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
                 <i class="fab fa-github"></i>
             </a>
-            
             <a href="https://www.linkedin.com/in/aanushka-singh-5bab49223/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
                 <i class="fab fa-linkedin"></i>
             </a>
-            </div>
+        </div>
     </footer>
 
     <!-- Certificate Modal -->
     <div id="certificateModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeCertificate()">&times;</span>
-            <iframe id="certificateFrame" src="" frameborder="0" title="Certificate Viewer"></iframe>
+            <iframe id="certificateFrame" src="" title="Certificate Viewer"></iframe>
         </div>
     </div>
 </body>
